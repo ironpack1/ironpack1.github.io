@@ -1,6 +1,6 @@
 html
 {
-    background-image: url(/ironpack1.github.io/assets/back.jpg);
+    background-image: url("https://ironpack1.github.io/assets/back.jpg");
 }
 
 *
@@ -50,8 +50,3 @@ display:grid;
     text-decoration: none;
 }
 
-.credits
-{
-    color:white;
-    align-self:auto;
-}
