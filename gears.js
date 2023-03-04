@@ -1,21 +1,12 @@
 const numBoxes = 6;
 const boxes = [];
 const coordinates = [];
-const speed = 0.1;
+const speed = 0.4;
 const DEG_TO_RAD = Math.PI / 180;
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 let radius = Math.min(window.innerWidth, window.innerHeight) * 0.3;
-var myInterval = setInterval(tick, 0);
-var lastUpdate = Date.now();
-var deltaTime =  Date.now() - lastUpdate;
 
-function tick()
-{
-    var now = Date.now();
-    this.deltaTime = now - lastUpdate;
-    lastUpdate = now;
-}
 
 function speen(box, offset) 
 {
@@ -23,7 +14,7 @@ function speen(box, offset)
 
     function updateBox() 
     {
-        angle += DEG_TO_RAD * speed * deltaTime;
+        angle += DEG_TO_RAD * speed;
         let x = windowWidth / 2 + radius * Math.cos(angle);
         let y = windowHeight / 2 + radius * Math.sin(angle);
         box.style.left = x + 'px';
