@@ -9,6 +9,8 @@ html
     aspect-ratio: 1/1;
     display: inline-block;
     transform: translate(-50%, -50%);
-    border: 5px solid white;
+    border-width: min(1vw, 1vh);
+    border-color:white;
+    border-style: solid;
     
 }
