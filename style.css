@@ -1,17 +1,14 @@
 html
 {
     background-color: black;
-    overflow: hidden;
 }
-.allwork
+.whitebox
 {
-    margin-top: 50vh;
-    margin-left: 50vw;
-    text-align: center;
-    background-color: black;
+    position: absolute;
+    width: 5vw;
+    aspect-ratio: 1/1;
     display: inline-block;
-}
-.noplay
-{
-    color: greenyellow;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    
 }
